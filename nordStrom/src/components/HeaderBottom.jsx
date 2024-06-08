@@ -1,12 +1,18 @@
 import React from 'react';
-import { Flex, Button, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { Flex, Menu, MenuButton } from "@chakra-ui/react";
 import "../components/HeaderBottom.css";
 import BelowHeader from './BelowHeader';
 
 function HeaderBottom() {
     return (
+        <>
+        <div style={{width:"100%",height:"50px",backgroundColor:"#186adc"}}>
+         <p style={{fontSize:'16px',color:"white",marginLeft:"130px",paddingTop:"10px",fontFamily:"sans-serif",fontWeight:"medium"}}>Free shipping on most orders over $89. Shop online or pick up select orders at a Nordstrom Rack or Nordstrom store. Learn More</p>
+        </div>
+
         <div className="headerBottomContainer">
             {/* Header Bottom-Section */}
+           
             <div className="headerBottom">
                 <img id="brand-logo" src="https://seeklogo.com/images/N/nordstrom-rack-logo-9C42362F49-seeklogo.com.png" alt="Brand-logo" />
                 <Flex className="search-bar-container">
@@ -17,41 +23,33 @@ function HeaderBottom() {
                     <input type="text" placeholder="Search for products or brands" className='search' />
                 </Flex>
                 <Menu>
-                    <MenuButton as={Button} variant="outline" ml={39}>
+                    <MenuButton ml={39}>
                         Sign In
                     </MenuButton>
-                    <MenuList>
-                        <MenuItem>Profile</MenuItem>
-                        <MenuItem>My Account</MenuItem>
-                        <MenuItem>Settings</MenuItem>
-                        <MenuItem>Sign out</MenuItem>
-                    </MenuList>
                 </Menu>
                 <div className="stores-container">
-                    <img src="./assets/Stores.png" alt="Stores" className="stores-image" />
-                    <a href="#" className="stores-link">Stores</a>
+                    <img src="src/assets/Stores.png" alt="Stores" className="stores-image" />
+                    <a href="https://stores.nordstromrack.com/search?origin=tab" className="stores-link">Stores</a>
                 </div>
 
                 <div className="purchases-container">
-                    <img src=" ./assets/Purchases.png" alt=" Purchases" className="purchases-logo" />
-                    <a href="#" className="purchases-link">Purchases</a>
+                    <img src="src/assets/Purchase.png" alt="Purchases" className="purchases-logo" />
+                    <a href="https://www.nordstromrack.com/signin/order-lookup" className="purchases-link">Purchases</a>
                 </div>
 
                 <div className="bag-container">
-                    <img src="./assets/Bag" alt="Bag" className="   bag-logo" />
-                    <a href="#" className="bag-link"></a>
+                    <img src="src/assets/Bag.png" alt="Bag" className="bag-logo" />
+                    <a href="https://www.nordstromrack.com/shopping-bag" className="bag-link"></a>
                 </div>
-                
             </div>
             {/* Header Bottom-Section-End */}
 
             <div>
                 <BelowHeader />
             </div>
-
         </div>
-
-       
+        </>
+        
     );
 }
 
