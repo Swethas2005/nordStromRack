@@ -1,8 +1,34 @@
-# React + Vite
+# NordStromRack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+![Alt text](src/assets/nordStromRack.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 
+Nordstrom Rack is an off-price retail division of Nordstrom, offering discounted fashion apparel, accessories, and home goods from top brands.
+
+
+## Tech stack used:
+  - React.js
+  - Chakra UI
+  - Chara Icons
+  - React icons
+  - React Dom
+
+
+## Functionality
+  - Slider Bar
+
+## Completed in 3 days
+
+---
+
+#### Images of the websites
+#### Slider-1 :
+![Home page](src/assets/Slider-1.png)
+#### Slider-2:
+![about page](src/assets//slider.png)
+#### Data Displaying :
+![ Footer](src/assets/footer.png)
+
+###  Thank you.
+
